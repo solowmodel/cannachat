@@ -36,8 +36,9 @@
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.setRequestHeader("Authorization", "Bearer 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");
 
+    var context = "You are a chatbot that answers questions about cannabis. ";
     var data = JSON.stringify({
-      prompt: input,
+      prompt: context + input,
       max_tokens: 150,
       n: 1,
       stop: ["\n"]
@@ -49,4 +50,5 @@
 
 </body>
 </html>
+
 
